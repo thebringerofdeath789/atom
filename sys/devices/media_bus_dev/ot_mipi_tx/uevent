@@ -1,0 +1,2 @@
+DRIVER=ot_mipi_tx
+MODALIAS=media:ot_mipi_tx

@@ -1,0 +1,5 @@
+OF_NAME=otp
+OF_FULLNAME=/soc/otp@0x101E0000
+OF_COMPATIBLE_0=vendor,otp
+OF_COMPATIBLE_N=1
+MODALIAS=of:NotpT(null)Cvendor,otp

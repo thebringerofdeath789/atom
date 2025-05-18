@@ -1,0 +1,5 @@
+OF_NAME=dpu_rect
+OF_FULLNAME=/soc/dpu_rect@0x17030000
+OF_COMPATIBLE_0=vendor,dpu_rect
+OF_COMPATIBLE_N=1
+MODALIAS=of:Ndpu_rectT(null)Cvendor,dpu_rect

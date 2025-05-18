@@ -1,0 +1,6 @@
+DRIVER=wing-usb
+OF_NAME=usb30drd
+OF_FULLNAME=/usb30drd@0x10320000
+OF_COMPATIBLE_0=wing-usb,host
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nusb30drdT(null)Cwing-usb,host

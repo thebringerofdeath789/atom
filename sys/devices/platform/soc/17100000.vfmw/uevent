@@ -1,0 +1,6 @@
+DRIVER=ot_vfmw
+OF_NAME=vfmw
+OF_FULLNAME=/soc/vfmw@0x17100000
+OF_COMPATIBLE_0=vendor,vfmw
+OF_COMPATIBLE_N=1
+MODALIAS=of:NvfmwT(null)Cvendor,vfmw

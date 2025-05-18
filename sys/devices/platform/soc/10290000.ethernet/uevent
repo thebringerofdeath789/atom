@@ -1,0 +1,6 @@
+DRIVER=gmac_v200
+OF_NAME=ethernet
+OF_FULLNAME=/soc/ethernet@10290000
+OF_COMPATIBLE_0=vendor,gmac-v5
+OF_COMPATIBLE_N=1
+MODALIAS=of:NethernetT(null)Cvendor,gmac-v5

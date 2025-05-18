@@ -1,0 +1,2 @@
+DRIVER=vdec
+MODALIAS=media:vdec

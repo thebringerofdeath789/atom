@@ -1,0 +1,6 @@
+DRIVER=ot_jpegd
+OF_NAME=jpegd
+OF_FULLNAME=/soc/jpegd@0x17180000
+OF_COMPATIBLE_0=vendor,jpegd
+OF_COMPATIBLE_N=1
+MODALIAS=of:NjpegdT(null)Cvendor,jpegd

@@ -1,0 +1,2 @@
+DRIVER=mcf
+MODALIAS=media:mcf

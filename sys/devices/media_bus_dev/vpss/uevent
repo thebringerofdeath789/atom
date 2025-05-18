@@ -1,0 +1,2 @@
+DRIVER=vpss
+MODALIAS=media:vpss

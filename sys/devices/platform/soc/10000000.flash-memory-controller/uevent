@@ -1,0 +1,6 @@
+DRIVER=fmc
+OF_NAME=flash-memory-controller
+OF_FULLNAME=/soc/flash-memory-controller@10000000
+OF_COMPATIBLE_0=vendor,fmc
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nflash-memory-controllerT(null)Cvendor,fmc

@@ -1,0 +1,6 @@
+DRIVER=ot_vi
+OF_NAME=vi
+OF_FULLNAME=/soc/vi@0x17400000
+OF_COMPATIBLE_0=vendor,vi
+OF_COMPATIBLE_N=1
+MODALIAS=of:NviT(null)Cvendor,vi

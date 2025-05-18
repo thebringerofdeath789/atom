@@ -1,0 +1,2 @@
+DRIVER=logmpp
+MODALIAS=media:logmpp

@@ -1,0 +1,6 @@
+DRIVER=ot_gdc
+OF_NAME=gdc
+OF_FULLNAME=/soc/gdc@0x172c0000
+OF_COMPATIBLE_0=vendor,gdc
+OF_COMPATIBLE_N=1
+MODALIAS=of:NgdcT(null)Cvendor,gdc

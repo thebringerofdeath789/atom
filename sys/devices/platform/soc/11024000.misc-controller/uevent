@@ -1,0 +1,6 @@
+OF_NAME=misc-controller
+OF_FULLNAME=/soc/misc-controller@11024000
+OF_COMPATIBLE_0=vendor,miscctrl
+OF_COMPATIBLE_1=syscon
+OF_COMPATIBLE_N=2
+MODALIAS=of:Nmisc-controllerT(null)Cvendor,miscctrlCsyscon

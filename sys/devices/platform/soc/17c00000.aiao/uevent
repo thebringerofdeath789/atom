@@ -1,0 +1,6 @@
+DRIVER=ot_aiao
+OF_NAME=aiao
+OF_FULLNAME=/soc/aiao@17c00000
+OF_COMPATIBLE_0=vendor,aiao
+OF_COMPATIBLE_N=1
+MODALIAS=of:NaiaoT(null)Cvendor,aiao

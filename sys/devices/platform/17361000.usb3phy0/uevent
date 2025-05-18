@@ -1,0 +1,6 @@
+DRIVER=ups-phy
+OF_NAME=usb3phy0
+OF_FULLNAME=/usb3phy0@0x17361000
+OF_COMPATIBLE_0=combophy,common
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nusb3phy0T(null)Ccombophy,common

@@ -1,0 +1,2 @@
+DRIVER=venc_msg
+MODALIAS=media:venc_msg

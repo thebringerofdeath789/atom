@@ -1,0 +1,2 @@
+DRIVER=isp_dev
+MODALIAS=media:isp_dev

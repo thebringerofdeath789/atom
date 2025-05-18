@@ -1,0 +1,6 @@
+DRIVER=ot_ive
+OF_NAME=ive
+OF_FULLNAME=/soc/ive@0x17000000
+OF_COMPATIBLE_0=vendor,ive
+OF_COMPATIBLE_N=1
+MODALIAS=of:NiveT(null)Cvendor,ive

@@ -1,0 +1,2 @@
+DEVTYPE=mfd_device
+MODALIAS=platform:bsp_nand

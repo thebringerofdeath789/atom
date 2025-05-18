@@ -1,0 +1,5 @@
+OF_NAME=gfbg
+OF_FULLNAME=/soc/gfbg@0x17A00000
+OF_COMPATIBLE_0=vendor,gfbg
+OF_COMPATIBLE_N=1
+MODALIAS=of:NgfbgT(null)Cvendor,gfbg

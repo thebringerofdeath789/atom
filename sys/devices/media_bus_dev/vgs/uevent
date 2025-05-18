@@ -1,0 +1,2 @@
+DRIVER=vgs
+MODALIAS=media:vgs

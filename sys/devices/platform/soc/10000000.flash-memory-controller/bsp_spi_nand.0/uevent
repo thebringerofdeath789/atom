@@ -1,0 +1,7 @@
+DEVTYPE=mfd_device
+DRIVER=bsp_spi_nand
+OF_NAME=spi_nand_controller
+OF_FULLNAME=/soc/flash-memory-controller@10000000/spi_nand_controller
+OF_COMPATIBLE_0=vendor,fmc-spi-nand
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nspi_nand_controllerT(null)Cvendor,fmc-spi-nand

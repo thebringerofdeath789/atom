@@ -1,0 +1,12 @@
+MCI0: pluged_connected
+	Type: SD card(SDXC)
+	Mode: UHS SDR104 
+	Speed Class: Class 10
+	Uhs Speed Grade: 10MB/sec and above(1h)
+	Host work clock: 150MHz
+	Card support clock: 150MHz
+	Card work clock: 150MHz
+	Card error count: 0
+MCI1: invalid
+MCI2: invalid
+MCI3: invalid

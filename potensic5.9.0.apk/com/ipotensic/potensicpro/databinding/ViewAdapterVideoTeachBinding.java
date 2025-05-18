@@ -1,0 +1,59 @@
+package com.ipotensic.potensicpro.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import com.ipotensic.potensicpro.C2640R;
+
+/* loaded from: classes2.dex */
+public final class ViewAdapterVideoTeachBinding implements ViewBinding {
+    public final ImageView ivVideo;
+    private final ConstraintLayout rootView;
+    public final TextView tvCodeTitle;
+    public final TextView tvMessage;
+
+    private ViewAdapterVideoTeachBinding(ConstraintLayout constraintLayout, ImageView imageView, TextView textView, TextView textView2) {
+        this.rootView = constraintLayout;
+        this.ivVideo = imageView;
+        this.tvCodeTitle = textView;
+        this.tvMessage = textView2;
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    public ConstraintLayout getRoot() {
+        return this.rootView;
+    }
+
+    public static ViewAdapterVideoTeachBinding inflate(LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    public static ViewAdapterVideoTeachBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
+        View inflate = layoutInflater.inflate(C2640R.layout.view_adapter_video_teach, viewGroup, false);
+        if (z) {
+            viewGroup.addView(inflate);
+        }
+        return bind(inflate);
+    }
+
+    public static ViewAdapterVideoTeachBinding bind(View view) {
+        int i = C2640R.id.iv_video;
+        ImageView imageView = (ImageView) view.findViewById(C2640R.id.iv_video);
+        if (imageView != null) {
+            i = C2640R.id.tv_code_title;
+            TextView textView = (TextView) view.findViewById(C2640R.id.tv_code_title);
+            if (textView != null) {
+                i = C2640R.id.tv_message;
+                TextView textView2 = (TextView) view.findViewById(C2640R.id.tv_message);
+                if (textView2 != null) {
+                    return new ViewAdapterVideoTeachBinding((ConstraintLayout) view, imageView, textView, textView2);
+                }
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i)));
+    }
+}

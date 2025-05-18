@@ -1,0 +1,5 @@
+OF_NAME=dpu_match
+OF_FULLNAME=/soc/dpu_match@0x17030000
+OF_COMPATIBLE_0=vendor,dpu_match
+OF_COMPATIBLE_N=1
+MODALIAS=of:Ndpu_matchT(null)Cvendor,dpu_match

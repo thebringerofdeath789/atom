@@ -1,0 +1,6 @@
+OF_NAME=ioconfig0
+OF_FULLNAME=/soc/ioconfig0@0eff0000
+OF_COMPATIBLE_0=vendor,ioconfig
+OF_COMPATIBLE_1=syscon
+OF_COMPATIBLE_N=2
+MODALIAS=of:Nioconfig0T(null)Cvendor,ioconfigCsyscon

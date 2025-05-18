@@ -1,0 +1,5 @@
+OF_NAME=adc
+OF_FULLNAME=/soc/adc@0x11080000
+OF_COMPATIBLE_0=vendor,lsadc
+OF_COMPATIBLE_N=1
+MODALIAS=of:NadcT(null)Cvendor,lsadc

@@ -1,0 +1,2 @@
+DRIVER=xhci-hcd
+MODALIAS=platform:xhci-hcd

@@ -1,0 +1,5 @@
+OF_NAME=pwm
+OF_FULLNAME=/soc/pwm@0x11080000
+OF_COMPATIBLE_0=vendor,pwm
+OF_COMPATIBLE_N=1
+MODALIAS=of:NpwmT(null)Cvendor,pwm

@@ -1,0 +1,4 @@
+MAJOR=31
+MINOR=14
+DEVNAME=mtdblock14
+DEVTYPE=disk

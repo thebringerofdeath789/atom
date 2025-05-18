@@ -1,0 +1,6 @@
+DRIVER=ot_mipi_rx
+OF_NAME=mipi_rx
+OF_FULLNAME=/soc/mipi_rx@0x173c0000
+OF_COMPATIBLE_0=vendor,mipi_rx
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nmipi_rxT(null)Cvendor,mipi_rx

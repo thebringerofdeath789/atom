@@ -1,0 +1,6 @@
+DRIVER=vendor-gemac-mdio
+OF_NAME=mdio
+OF_FULLNAME=/soc/mdio@102903c0
+OF_COMPATIBLE_0=vendor,gemac-mdio
+OF_COMPATIBLE_N=1
+MODALIAS=of:NmdioT(null)Cvendor,gemac-mdio

@@ -1,0 +1,2 @@
+DRIVER=watchdog
+MODALIAS=media:watchdog

@@ -1,0 +1,6 @@
+DRIVER=ot_km
+OF_NAME=km
+OF_FULLNAME=/soc/km@0x101EA000
+OF_COMPATIBLE_0=vendor,km
+OF_COMPATIBLE_N=1
+MODALIAS=of:NkmT(null)Cvendor,km

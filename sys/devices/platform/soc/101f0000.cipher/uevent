@@ -1,0 +1,6 @@
+DRIVER=ot_cipher
+OF_NAME=cipher
+OF_FULLNAME=/soc/cipher@0x101F0000
+OF_COMPATIBLE_0=vendor,cipher
+OF_COMPATIBLE_N=1
+MODALIAS=of:NcipherT(null)Cvendor,cipher

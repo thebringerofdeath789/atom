@@ -1,0 +1,2 @@
+DRIVER=motionfusion
+MODALIAS=media:motionfusion

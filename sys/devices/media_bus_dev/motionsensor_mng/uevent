@@ -1,0 +1,2 @@
+DRIVER=motionsensor_mng
+MODALIAS=media:motionsensor_mng

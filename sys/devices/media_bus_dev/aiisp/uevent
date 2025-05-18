@@ -1,0 +1,2 @@
+DRIVER=aiisp
+MODALIAS=media:aiisp

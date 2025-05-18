@@ -1,0 +1,6 @@
+DRIVER=sdhci_nebula
+OF_NAME=SDIO
+OF_FULLNAME=/soc/SDIO@0x10030000
+OF_COMPATIBLE_0=nebula,sdhci
+OF_COMPATIBLE_N=1
+MODALIAS=of:NSDIOT(null)Cnebula,sdhci

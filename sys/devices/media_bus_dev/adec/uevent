@@ -1,0 +1,2 @@
+DRIVER=adec
+MODALIAS=media:adec

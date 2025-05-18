@@ -1,0 +1,6 @@
+DRIVER=ot_wdg
+OF_NAME=wdg
+OF_FULLNAME=/soc/wdg@0x11030000
+OF_COMPATIBLE_0=vendor,wdg
+OF_COMPATIBLE_N=1
+MODALIAS=of:NwdgT(null)Cvendor,wdg

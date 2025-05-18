@@ -1,0 +1,6 @@
+DRIVER=ot_sys
+OF_NAME=sys
+OF_FULLNAME=/soc/sys@11010000
+OF_COMPATIBLE_0=vendor,sys
+OF_COMPATIBLE_N=1
+MODALIAS=of:NsysT(null)Cvendor,sys

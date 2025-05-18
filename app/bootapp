@@ -1,0 +1,63 @@
+#!/bin/sh
+
+# set lib path
+LD_LIBRARY_PATH="/lib:/usr/lib:/usr/local/lib:/app/lib"
+export LD_LIBRARY_PATH
+
+#set core dump parameter
+#ulimit -c unlimited
+
+#load ko
+cd /app/komod
+./load_module
+
+mkdir -p /dev/lock
+#mount data partition
+ubiattach -m 14 /dev/ubi_ctrl || (/app/bin/ubiformat -y /dev/mtd14;ubiattach -m 14 /dev/ubi_ctrl)
+ubimkvol /dev/ubi2 -N data -s 275283968
+mount -t ubifs /dev/ubi2_0 /data
+mkdir -p /data/upgrading
+
+#set fflush data level
+echo 3 > /proc/sys/vm/dirty_background_ratio
+echo 40 > /proc/sys/vm/dirty_ratio
+echo 2048 > /proc/sys/vm/min_free_kbytes
+echo 1024 > /proc/sys/vm/user_reserve_kbytes
+
+/app/adjust_clock.sh&
+
+#gc 1084 XSHUTDOWN set to gpio output
+bspmm 0x179F0040 0x1740
+bspmm 0x1109B400 0x80
+#gc 1084 XSHUTDOWN pulldown then pullup to reset sensor 
+bspmm 0x1109B200 0x00
+sleep 0.1
+bspmm 0x1109B200 0x80
+#I2C5 pinmux
+bspmm 0x0EFF0028 0x1482
+bspmm 0x0EFF0024 0x1482
+
+
+#start application
+cd /app/bin
+taskset 0x3 ./data_acquirer /app/sd/data_log &
+taskset 0x1 ./log_manager /app/sd/cam_log &
+taskset 0x3 ./main_app &
+taskset 0x2 ./optical_flow &
+taskset 0x2 ./system_monitor &
+taskset 0x3 ./quick_shot &
+
+
+/app/daemon.sh &
+
+# set network and start telnetd
+if [ -f "/app/network_telnetd.sh" ];then
+	cd /app
+	./network_telnetd.sh
+fi
+
+# start ci agent
+if [ -f "/app/start_agent.sh" ];then
+	cd /app
+	./start_agent.sh
+fi

@@ -1,0 +1,4 @@
+serinfo:1.0 driver revision:
+0: uart:PL011 rev2 mmio:0x11040000 irq:16 tx:377153 rx:29 RTS|CTS|DTR|DSR|CD|RI
+1: uart:PL011 rev2 mmio:0x11041000 irq:17 tx:320966 rx:2489561 RTS|DTR|DSR|CD|RI
+4: uart:PL011 rev2 mmio:0x11044000 irq:18 tx:0 rx:0 CTS|DSR|CD|RI

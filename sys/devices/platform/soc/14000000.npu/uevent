@@ -1,0 +1,5 @@
+OF_NAME=npu
+OF_FULLNAME=/soc/npu@0x14000000
+OF_COMPATIBLE_0=vendor,svp_npu
+OF_COMPATIBLE_N=1
+MODALIAS=of:NnpuT(null)Cvendor,svp_npu

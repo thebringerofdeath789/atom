@@ -1,0 +1,2 @@
+DRIVER=motionsensor_chip
+MODALIAS=media:motionsensor_chip

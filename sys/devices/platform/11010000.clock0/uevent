@@ -1,0 +1,7 @@
+DRIVER=hi3519dv500_clock
+OF_NAME=clock0
+OF_FULLNAME=/clock0
+OF_COMPATIBLE_0=vendor,hi3519dv500_clock
+OF_COMPATIBLE_1=syscon
+OF_COMPATIBLE_N=2
+MODALIAS=of:Nclock0T(null)Cvendor,hi3519dv500_clockCsyscon

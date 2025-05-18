@@ -1,0 +1,6 @@
+DRIVER=ot_vpss
+OF_NAME=vpss
+OF_FULLNAME=/soc/vpss@0x17900000
+OF_COMPATIBLE_0=vendor,vpss
+OF_COMPATIBLE_N=1
+MODALIAS=of:NvpssT(null)Cvendor,vpss

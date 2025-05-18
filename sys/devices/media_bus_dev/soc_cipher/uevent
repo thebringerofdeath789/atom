@@ -1,0 +1,2 @@
+DRIVER=soc_cipher
+MODALIAS=media:soc_cipher

@@ -1,0 +1,6 @@
+DRIVER=ot_vgs_device
+OF_NAME=vgs
+OF_FULLNAME=/soc/vgs@0x17240000
+OF_COMPATIBLE_0=vendor,vgs
+OF_COMPATIBLE_N=1
+MODALIAS=of:NvgsT(null)Cvendor,vgs

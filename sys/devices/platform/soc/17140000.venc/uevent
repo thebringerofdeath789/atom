@@ -1,0 +1,6 @@
+DRIVER=ot_venc
+OF_NAME=venc
+OF_FULLNAME=/soc/venc@0x17140000
+OF_COMPATIBLE_0=vendor,venc
+OF_COMPATIBLE_N=1
+MODALIAS=of:NvencT(null)Cvendor,venc

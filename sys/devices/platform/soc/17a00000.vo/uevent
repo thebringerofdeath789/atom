@@ -1,0 +1,5 @@
+OF_NAME=vo
+OF_FULLNAME=/soc/vo@0x17A00000
+OF_COMPATIBLE_0=vendor,vo
+OF_COMPATIBLE_N=1
+MODALIAS=of:NvoT(null)Cvendor,vo

@@ -1,0 +1,6 @@
+DEVTYPE=mfd_device
+OF_NAME=spi_nor_controller
+OF_FULLNAME=/soc/flash-memory-controller@10000000/spi_nor_controller
+OF_COMPATIBLE_0=vendor,fmc-spi-nor
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nspi_nor_controllerT(null)Cvendor,fmc-spi-nor

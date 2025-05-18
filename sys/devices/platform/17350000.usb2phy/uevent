@@ -1,0 +1,6 @@
+DRIVER=ups-phy
+OF_NAME=usb2phy
+OF_FULLNAME=/usb2phy@0x17350000
+OF_COMPATIBLE_0=usb2phy,xvpphy
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nusb2phyT(null)Cusb2phy,xvpphy

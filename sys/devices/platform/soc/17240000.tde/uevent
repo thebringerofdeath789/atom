@@ -1,0 +1,6 @@
+DRIVER=ot_tde
+OF_NAME=tde
+OF_FULLNAME=/soc/tde@0x17240000
+OF_COMPATIBLE_0=vendor,tde
+OF_COMPATIBLE_N=1
+MODALIAS=of:NtdeT(null)Cvendor,tde

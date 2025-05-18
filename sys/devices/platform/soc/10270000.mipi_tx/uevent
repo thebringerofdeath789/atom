@@ -1,0 +1,6 @@
+DRIVER=mipi_tx
+OF_NAME=mipi_tx
+OF_FULLNAME=/soc/mipi_tx@0x10270000
+OF_COMPATIBLE_0=vendor,mipi_tx
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nmipi_txT(null)Cvendor,mipi_tx

@@ -1,0 +1,5 @@
+OF_NAME=trng
+OF_FULLNAME=/soc/trng@0x101EE000
+OF_COMPATIBLE_0=vendor,trng
+OF_COMPATIBLE_N=1
+MODALIAS=of:NtrngT(null)Cvendor,trng
