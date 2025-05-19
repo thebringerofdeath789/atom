@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog_format_progress"
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="@dimen/dp_93">
+        <com.ipotensic.kernel.view.ProgressLoadingView
+            android:id="@+id/progress_view"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"/>
+        <TextView
+            android:textSize="@dimen/sp_11"
+            android:id="@+id/tv_text"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/settings_camera_sd_card_format_tips_formatting"
+            style="@style/font_white_13"/>
+    </LinearLayout>
+</RelativeLayout>

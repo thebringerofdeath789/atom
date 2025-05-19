@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_cancel_action"
+        android:padding="@dimen/dp_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:src="@mipmap/icon_cancel_action"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"/>
+    <ImageButton
+        android:id="@+id/btn_cancel_swoop_return"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:src="@mipmap/img_cancel_swoop_return"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cancel_action"/>
+    <TextView
+        android:textSize="@dimen/sp_11"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:id="@+id/text_cancel_swoop_return"
+        android:background="@mipmap/text_cancel_swoop_return"
+        android:paddingLeft="@dimen/dp_21"
+        android:paddingRight="@dimen/dp_16"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:text="@string/exit_descending_return_guide"
+        app:layout_constraintLeft_toRightOf="@+id/btn_cancel_swoop_return"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cancel_action"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

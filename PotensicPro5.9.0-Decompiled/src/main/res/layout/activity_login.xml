@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/img_bg_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/view_login_login"/>
+    <ViewStub
+        android:id="@+id/stub_register"
+        android:layout="@layout/view_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="@+id/stub_forget_password"
+        android:layout="@layout/view_login_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="@+id/stub_send_success"
+        android:layout="@layout/view_login_send_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

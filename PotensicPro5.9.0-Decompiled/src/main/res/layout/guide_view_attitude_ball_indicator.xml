@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_guide_left"
+    android:paddingTop="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="210dp"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_14"
+    android:paddingVertical="@dimen/dp_12">
+    <TextView
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/tv_view"
+        android:text="@string/guide_flight_interface_map_attitude_indicator_tips_tap_here"
+        android:lineSpacingExtra="-3dp"
+        style="@style/font_white_13"/>
+    <TextView
+        android:layout_marginTop="@dimen/dp_2"
+        android:text="@string/guide_flight_interface_map_attitude_indicator_tips_to_switch_to_attitude_indicator_mode"
+        android:lineSpacingExtra="-3dp"
+        style="@style/font_white_11"/>
+</LinearLayout>

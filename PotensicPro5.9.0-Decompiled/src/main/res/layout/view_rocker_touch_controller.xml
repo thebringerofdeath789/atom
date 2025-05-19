@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.ipotensic.kernel.view.RockerTouchView
+        android:id="@+id/rocker_view_left"
+        android:background="@color/colorTransparent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:out_circle_background="@mipmap/icon_mode1_left_rocker"
+        app:rock_touch_mode="true"
+        app:rocker_point_background="@mipmap/icon_control_point"/>
+    <com.ipotensic.kernel.view.RockerTouchView
+        android:id="@+id/rocker_view_right"
+        android:background="@color/colorTransparent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:out_circle_background="@mipmap/icon_mode1_right_rocker"
+        app:rock_touch_mode="true"
+        app:rocker_point_background="@mipmap/icon_control_point"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

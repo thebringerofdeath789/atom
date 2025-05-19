@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ipotensic.mediagallery.RvGridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_video_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:id="@+id/img_video"
+        android:visibility="gone"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@mipmap/img_video_play"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/img_select"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img_btn_select"
+        android:layout_centerInParent="true"/>
+</com.ipotensic.mediagallery.RvGridLayout>

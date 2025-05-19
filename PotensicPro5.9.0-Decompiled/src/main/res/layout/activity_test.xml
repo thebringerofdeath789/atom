@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:gravity="bottom"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.gs.keyboard.SecurityEditText
+                android:id="@+id/tv_security"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

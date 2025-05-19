@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@mipmap/icon_ev_01"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@mipmap/icon_ev_02"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@mipmap/icon_ev_03"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@mipmap/icon_ev_04"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@mipmap/icon_ev_05"
+        android:maxLevel="4"/>
+    <item
+        android:drawable="@mipmap/icon_ev_06"
+        android:maxLevel="5"/>
+    <item
+        android:drawable="@mipmap/icon_ev_07"
+        android:maxLevel="6"/>
+    <item
+        android:drawable="@mipmap/icon_ev_08"
+        android:maxLevel="7"/>
+    <item
+        android:drawable="@mipmap/icon_ev_09"
+        android:maxLevel="8"/>
+</level-list>

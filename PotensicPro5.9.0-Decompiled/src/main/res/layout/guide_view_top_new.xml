@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_view"
+        android:background="@mipmap/bg_guide_top"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_8"
+        android:text="@string/guide_top_mode"
+        android:width="@dimen/dp_85"
+        android:lineSpacingExtra="-3dp"
+        android:paddingHorizontal="@dimen/dp_8"
+        style="@style/font_white_11"/>
+</RelativeLayout>

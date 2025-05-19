@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@+id/bottom_container"
+        android:background="@drawable/dkplayer_shape_stardard_controller_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dkplayer_controller_height">
+        <ImageView
+            android:id="@+id/iv_play"
+            android:padding="@dimen/dkplayer_controller_icon_padding"
+            android:layout_width="@dimen/dkplayer_controller_height"
+            android:layout_height="@dimen/dkplayer_controller_height"
+            android:src="@drawable/dkplayer_selector_play_button"/>
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:padding="@dimen/dkplayer_controller_icon_padding"
+            android:layout_width="@dimen/dkplayer_controller_height"
+            android:layout_height="@dimen/dkplayer_controller_height"
+            android:src="@drawable/dkplayer_ic_action_autorenew"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/fullscreen"
+            android:padding="@dimen/dkplayer_controller_icon_padding"
+            android:layout_width="@dimen/dkplayer_controller_height"
+            android:layout_height="@dimen/dkplayer_controller_height"
+            android:src="@drawable/dkplayer_selector_full_screen_button"/>
+    </LinearLayout>
+</FrameLayout>

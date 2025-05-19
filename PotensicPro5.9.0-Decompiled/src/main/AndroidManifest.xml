@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.ipotensic.potensicpro">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE "/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.USB_PERMISSION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="com.ipotensic.potensicpro.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission
+        android:name="android.permission.GET_TASKS"
+        android:maxSdkVersion="20"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-feature android:name="android.hardware.usb.accessory"/>
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name_potensicpro"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.ipotensic.potensicpro.MyApplication"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:maxAspectRatio="2.4"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:allowNativeHeapPointerTagging="false">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.ipotensic.potensicpro.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <uses-library android:name="com.android.future.usb.accessory"/>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="u4IAXy0WbmV6gfAb7XpnFjjUUZLo4ARZ"/>
+        <meta-data
+            android:name="com.ipotensic.baselib.MyGlideModule"
+            android:value="GlideModule"/>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4"/>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="61b0db123667bd549ed0af46359891cd"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA02S3SgJuKRCYmd5PVEqMB-jNpGsBJ1Ys"/>
+        <activity
+            android:theme="@style/SplashTheme"
+            android:name="com.ipotensic.potensicpro.activities.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/SplashTheme"
+            android:name="com.ipotensic.potensicpro.activities.UsbAttachedActivity"
+            android:exported="true"
+            android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter"/>
+        </activity>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.DebugActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+            android:name="com.ipotensic.kernel.activitys.VideoViewerPortActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.VideoViewerLandActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.VideoDisplayActivity"
+            android:screenOrientation="behind"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.camera.CameraActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.KernelActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.ChooseFlightActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.UserAgreementActivity2"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.UserPrivacyActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.UserProtocolActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.PhotoViewerActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.PhotoViewerLandActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.VideoTeachActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.InstructionActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.FlightRecordActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.AircraftLogActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.AircraftLogDetailActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.PdfShowActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.ModifyLoginPwdActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.NickNameActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.WebsiteActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.MainMediaPhotoViewerActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.GalleryActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.UserPersonInfoActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="me.yokeyword.indexablerv.countrys.PickCountryActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.FwDownloadActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.CompanyContactActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.FindMyDroneActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.DroneGuideActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.FeedbackDetailsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.potensicpro.activities.GalleryChooseActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.MiniRepairActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.RemoterCalActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.BigPackageActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.ipotensic.potensicpro.activities.PdfWebActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppThemeFullScreen"
+            android:name="com.ipotensic.kernel.activitys.BigPackageQuestionActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.ipotensic.kernel.activitys.MapTestActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.ipotensic.baselib.base.WebActivity"
+            android:screenOrientation="portrait"/>
+        <provider
+            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+            android:exported="false"
+            android:authorities="com.ipotensic.potensicpro.mapboxtelemetryinitprovider"
+            android:initOrder="100"/>
+        <service
+            android:name="com.mapbox.android.telemetry.errors.ErrorReporterJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.ipotensic.potensicpro.lifecycle-process"/>
+        <meta-data
+            android:name="com.android.dynamic.apk.fused.modules"
+            android:value="base"/>
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store"/>
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2"/>
+    </application>
+</manifest>

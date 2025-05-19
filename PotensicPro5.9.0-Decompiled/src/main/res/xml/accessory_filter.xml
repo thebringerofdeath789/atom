@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resource>
+    <usb-accessory
+        manufacturer="crolin"
+        model="android.usbaoa"
+        version="0.1"/>
+    <usb-device
+        class="239"
+        subclass="2"/>
+</resource>

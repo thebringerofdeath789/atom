@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hot_country">
+        <item>Estados Unidos</item>
+        <item>Japão</item>
+        <item>Alemanha</item>
+        <item>Itália</item>
+        <item>França</item>
+        <item>Espanha</item>
+        <item>Reino Unido</item>
+        <item>Polônia</item>
+    </array>
+    <array name="welcome_speech">
+        <item>Experimente o encanto da natureza</item>
+        <item>Registre cada momento</item>
+        <item>Aproveite seu tempo juntos</item>
+    </array>
+</resources>

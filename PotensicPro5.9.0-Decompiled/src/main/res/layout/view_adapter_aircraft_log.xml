@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60">
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_name"
+        android:paddingLeft="@dimen/dp_10"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="P1 Pro 2019/09/09 02:49:04"
+        android:layout_weight="2.3"
+        android:lineSpacingExtra="-3dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_upload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_aircraft_log_btn_upload"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_aircraft_log_btn_share"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

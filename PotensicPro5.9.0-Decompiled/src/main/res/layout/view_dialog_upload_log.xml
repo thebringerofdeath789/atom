@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/color_full_black"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_title"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/map_green_line"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Upload Success"/>
+    <ImageView
+        android:id="@+id/img_loading"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/img_loading"
+        android:layout_centerInParent="true"/>
+    <View
+        android:background="@color/colorGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/btn_sure"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="OK"/>
+</LinearLayout>

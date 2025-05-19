@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 34
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId 'com.ipotensic.potensicpro'
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 574
+        versionName "V5.9.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility sourceCompatibility
+        targetCompatibility targetCompatibility
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+    ndkVersion '29.0.13113456 rc1'
+    flavorDimensions
+}
+
+dependencies {
+    // some dependencies
+}

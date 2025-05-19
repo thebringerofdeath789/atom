@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_view"
+    android:background="@mipmap/bg_guide_left"
+    android:paddingTop="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_12"
+    android:layout_width="250dp"
+    android:text="@string/guide_flight_interface_enter_map_interface_tips"
+    android:lineSpacingExtra="-3dp"
+    android:paddingStart="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_12"
+    android:paddingVertical="@dimen/dp_12"
+    style="@style/font_white_11"/>

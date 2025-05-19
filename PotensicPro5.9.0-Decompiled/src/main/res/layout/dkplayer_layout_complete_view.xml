@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/complete_container"
+    android:background="#33000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/stop_fullscreen"
+        android:padding="@dimen/dkplayer_controller_icon_padding"
+        android:visibility="gone"
+        android:layout_width="@dimen/dkplayer_controller_height"
+        android:layout_height="@dimen/dkplayer_controller_height"
+        android:src="@drawable/dkplayer_ic_action_arrow_back"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_replay"
+            android:layout_width="@dimen/dkplayer_play_btn_size"
+            android:layout_height="@dimen/dkplayer_play_btn_size"
+            android:src="@drawable/img_video_play"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/dkplayer_replay"/>
+    </LinearLayout>
+</FrameLayout>

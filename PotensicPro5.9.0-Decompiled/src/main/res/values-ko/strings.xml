@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">홈으로 이동</string>
+    <string name="abc_action_bar_up_description">위로 이동</string>
+    <string name="abc_action_menu_overflow_description">추가 옵션</string>
+    <string name="abc_action_mode_done">완료</string>
+    <string name="abc_activity_chooser_view_see_all">전체 보기</string>
+    <string name="abc_activitychooserview_choose_application">앱 선택</string>
+    <string name="abc_capital_off">사용 중지</string>
+    <string name="abc_capital_on">사용</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">Delete</string>
+    <string name="abc_menu_enter_shortcut_label">Enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">스페이스바</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">검색...</string>
+    <string name="abc_searchview_description_clear">검색어 삭제</string>
+    <string name="abc_searchview_description_query">검색어</string>
+    <string name="abc_searchview_description_search">검색</string>
+    <string name="abc_searchview_description_submit">검색어 보내기</string>
+    <string name="abc_searchview_description_voice">음성 검색</string>
+    <string name="abc_shareactionprovider_share_with">공유 대상:</string>
+    <string name="abc_shareactionprovider_share_with_application">%s과(와) 공유</string>
+    <string name="abc_toolbar_collapse_description">접기</string>
+    <string name="mapbox_attributionErrorNoBrowser">웹 브라우저가 설치 되어 있지 않아, 웹 페이지를 열 수 없습니다.</string>
+    <string name="mapbox_attributionTelemetryMessage">당신은 익명의 사용 데이터를 제공함으로써, 오픈스트리트맵과 맵박스 향상에 기여하고 있습니다.</string>
+    <string name="mapbox_attributionTelemetryNegative">비동의</string>
+    <string name="mapbox_attributionTelemetryNeutral">추가정보</string>
+    <string name="mapbox_attributionTelemetryPositive">동의</string>
+    <string name="mapbox_attributionTelemetryTitle">더 나은 맵박스 지도 만들기</string>
+    <string name="mapbox_attributionsDialogTitle">안드로이드를 위한 맵박스 맵 SDK</string>
+    <string name="mapbox_attributionsIconContentDescription">속성 정보. 속성 대화를 표시합니다.</string>
+    <string name="mapbox_compassContentDescription">지도 나침반. 지도회전를 북쪽으로 재설정합니다.</string>
+    <string name="mapbox_mapActionDescription">맵박스로 생성된 지도 표시. 두 손가락으로 드래그하여 화면을 위 아래로 움직이세요. 두 손가락을 이용해 화면을 확대 축소 하세요.</string>
+    <string name="mapbox_myLocationViewContentDescription">로케이션 뷰. 지도에서 현재 위치를 보여줍니다.</string>
+    <string name="mapbox_offline_error_region_definition_invalid">제공된 오프라인지역정의가 월드바운즈에 적합하지 않습니다: %s</string>
+    <string name="mapbox_telemetrySettings">원격 측정 설정</string>
+    <string name="nav_app_bar_navigate_up_description">위로 이동</string>
+    <string name="nav_app_bar_open_drawer_description">탐색 창 열기</string>
+    <string name="search_menu_title">검색</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

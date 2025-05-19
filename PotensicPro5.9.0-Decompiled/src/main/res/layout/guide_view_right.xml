@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@mipmap/icon_guide_arrow_right"
+    android:padding="@dimen/dp_5"
+    android:layout_width="@dimen/dp_150"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/sp_8"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/tv_guide_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide"
+        android:drawableTop="@mipmap/icon_guide"/>
+    <TextView
+        android:textSize="@dimen/sp_8"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/tv_return"
+        android:paddingLeft="@dimen/dp_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_right_camera_angle"
+        android:lineSpacingExtra="-3dp"/>
+</LinearLayout>

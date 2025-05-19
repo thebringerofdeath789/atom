@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <!--数据库名-->
+    <dbname value="map"></dbname>
+
+    <!--版本名-->
+    <version value="2"></version>
+
+    <!--实体类包名-->
+    <list>
+        <mapping class="com.ipotensic.kernel.bean.FlightRecordBean" />
+        <mapping class="com.ipotensic.kernel.bean.MultiPointBean" />
+        <mapping class="com.ipotensic.kernel.bean.FlightNotes" />
+        <mapping class="com.ipotensic.kernel.bean.FlightLog"/>
+    </list>
+
+</litepal>
